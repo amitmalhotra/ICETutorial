@@ -37,8 +37,8 @@
                         <constraint firstAttribute="height" constant="400" id="192"/>
                     </constraints>
                 </imageView>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9">
-                    <rect key="frame" x="0.0" y="0.0" width="768" height="931"/>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9">
+                    <rect key="frame" x="-20" y="0.0" width="768" height="931"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <connections>
                         <outlet property="delegate" destination="-1" id="178"/>
@@ -82,11 +82,11 @@
                     </connections>
                 </pageControl>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="10">
-                    <rect key="frame" x="279" y="368" width="211" height="49"/>
+                    <rect key="frame" x="20" y="368" width="729" height="49"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="211" id="38"/>
                         <constraint firstAttribute="height" constant="49" id="73"/>
+                        <constraint firstAttribute="width" constant="729" id="Vvz-XQ-167"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="32"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -125,6 +125,7 @@
     </objects>
     <resources>
         <image name="background-gradient.png" width="320" height="200"/>
+        <image name="button-background.png" width="130" height="36"/>
         <image name="button-background.png" width="130" height="36"/>
     </resources>
 </document>
