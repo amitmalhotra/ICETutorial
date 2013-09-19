@@ -31,7 +31,6 @@ typedef void (^ButtonBlock)(UIButton *button);
 @interface ICETutorialController : UIViewController <UIScrollViewDelegate> {
     __weak IBOutlet UIImageView *_backLayerView;
     __weak IBOutlet UIImageView *_frontLayerView;
-    __weak IBOutlet UILabel *_overlayTitle;
     __weak IBOutlet UIScrollView *_scrollView;
     __weak IBOutlet UIPageControl *_pageControl;
     
@@ -57,6 +56,10 @@ typedef void (^ButtonBlock)(UIButton *button);
 @property (nonatomic, assign) CGFloat autoScrollDurationOnPage;
 @property (nonatomic, retain) ICETutorialLabelStyle *commonPageSubTitleStyle;
 @property (nonatomic, retain) ICETutorialLabelStyle *commonPageDescriptionStyle;
+@property (nonatomic, strong) IBOutlet UIButton * button1;
+@property (nonatomic, strong) IBOutlet UIButton * button2;
+@property (nonatomic, strong) IBOutlet UILabel *overlayTitle;
+
 
 // Inits.
 - (id)initWithNibName:(NSString *)nibNameOrNil
@@ -84,5 +87,6 @@ typedef void (^ButtonBlock)(UIButton *button);
 
 // State.
 - (ScrollingState)getCurrentState;
+
 
 @end

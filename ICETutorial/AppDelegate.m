@@ -62,8 +62,10 @@
     // Set the common styles, and start scrolling (auto scroll, and looping enabled by default)
     [self.viewController setCommonPageSubTitleStyle:subStyle];
     [self.viewController setCommonPageDescriptionStyle:descStyle];
-
-    // Set button 1 action.
+    [self.viewController.button1 setTitle:@"Learn More" forState:UIControlStateNormal];
+    [self.viewController.button2 setTitle:@"Skip" forState:UIControlStateNormal];
+    [self.viewController.overlayTitle setText:@"Welkommen"];
+    
     [self.viewController setButton1Block:^(UIButton *button){
         NSLog(@"Button 1 pressed.");
     }];
