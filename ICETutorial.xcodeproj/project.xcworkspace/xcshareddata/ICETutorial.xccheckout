@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>CE608949-2C11-4AF6-B57B-216DFC6B49BB</string>
+	<string>153DE6C5-49F7-406B-A29F-F95CDAD14168</string>
 	<key>IDESourceControlProjectName</key>
 	<string>ICETutorial</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>E38B7FA8-E302-4CFE-9372-9A3983F0659A</key>
-		<string>https://github.com/icepat/ICETutorial.git</string>
+		<key>6CD0EFBA-9E4C-4485-8008-D9ECA09FFDF0</key>
+		<string>https://github.com/amitmalhotra/ICETutorial.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>ICETutorial.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>E38B7FA8-E302-4CFE-9372-9A3983F0659A</key>
+		<key>6CD0EFBA-9E4C-4485-8008-D9ECA09FFDF0</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/icepat/ICETutorial.git</string>
+	<string>https://github.com/amitmalhotra/ICETutorial.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>E38B7FA8-E302-4CFE-9372-9A3983F0659A</string>
+	<string>6CD0EFBA-9E4C-4485-8008-D9ECA09FFDF0</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>E38B7FA8-E302-4CFE-9372-9A3983F0659A</string>
+			<string>6CD0EFBA-9E4C-4485-8008-D9ECA09FFDF0</string>
 			<key>IDESourceControlWCCName</key>
 			<string>ICETutorial</string>
 		</dict>
