@@ -32,17 +32,23 @@
 @interface ICETutorialPage : NSObject {
     ICETutorialLabelStyle *_subTitle;
     ICETutorialLabelStyle *_description;
-    NSString *_pictureName;
+    NSString *_portraitPictureName;
 }
 
 @property (nonatomic, retain) ICETutorialLabelStyle *subTitle;
 @property (nonatomic, retain) ICETutorialLabelStyle *description;
-@property (nonatomic, retain) NSString *pictureName;
+@property (nonatomic, retain) NSString *portraitPictureName;
+@property (nonatomic, retain) NSString *landscapePictureName;
 
 // Init.
 - (id)initWithSubTitle:(NSString *)subTitle
            description:(NSString *)description
            pictureName:(NSString *)pictureName;
+
+- (id)initWithSubTitle:(NSString *)subTitle
+           description:(NSString *)description
+           portraitPictureName:(NSString *)portraitPictureName
+           landscapePictureName:(NSString*)landscapePictureName;
 
 - (void)setSubTitleStyle:(ICETutorialLabelStyle *)style;
 - (void)setDescription:(ICETutorialLabelStyle *)style;

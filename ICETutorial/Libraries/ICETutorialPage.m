@@ -42,7 +42,9 @@
 @implementation ICETutorialPage
 @synthesize subTitle = _subTitle;
 @synthesize description = _description;
-@synthesize pictureName = _pictureName;
+@synthesize portraitPictureName = _portraitPictureName;
+@synthesize landscapePictureName = _landscapePictureName;
+
 
 // Init.
 - (id)initWithSubTitle:(NSString *)subTitle
@@ -52,11 +54,28 @@
     if (self){
         _subTitle = [[ICETutorialLabelStyle alloc] initWithText:subTitle];
         _description = [[ICETutorialLabelStyle alloc] initWithText:description];
-        _pictureName = pictureName;
+        _portraitPictureName = pictureName;
+        _landscapePictureName = pictureName; // same picture for both.
     }
     return self;
 }
 
+- (id)initWithSubTitle:(NSString *)subTitle
+           description:(NSString *)description
+   portraitPictureName:(NSString *)portraitPictureName
+  landscapePictureName:(NSString*)landscapePictureName{
+    
+    self = [super init];
+    if (self){
+        _subTitle = [[ICETutorialLabelStyle alloc] initWithText:subTitle];
+        _description = [[ICETutorialLabelStyle alloc] initWithText:description];
+        _portraitPictureName = portraitPictureName;
+        _landscapePictureName = landscapePictureName;
+    }
+    return self;
+    
+
+}
 - (void)setSubTitleStyle:(ICETutorialLabelStyle *)style{
     [_subTitle setFont:style.font];
     [_subTitle setTextColor:style.textColor];

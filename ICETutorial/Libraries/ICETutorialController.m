@@ -263,7 +263,12 @@
         return;
     }
     
-    NSString *imageName = [NSString stringWithFormat:@"%@",[[_pages objectAtIndex:index] pictureName]];
+    BOOL isPortrait = UIDeviceOrientationIsPortrait([[UIApplication sharedApplication] statusBarOrientation]);
+    
+    NSString *imageName = (isPortrait) ?
+                                            [NSString stringWithFormat:@"%@",[[_pages objectAtIndex:index] portraitPictureName]]
+                                       :    [NSString stringWithFormat:@"%@",[[_pages objectAtIndex:index] landscapePictureName]];
+    
     [imageView setImage:[UIImage imageNamed:imageName]];
 }
 
@@ -363,6 +368,13 @@
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
     // Update the page index.
     [_pageControl setCurrentPage:_currentPageIndex];
+}
+
+#pragma mark - Orientation Change methods
+-(void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration{
+    
+    [self setLayersPicturesWithIndex:_currentPageIndex];
+    
 }
 
 @end
